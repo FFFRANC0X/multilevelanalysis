@@ -1,0 +1,398 @@
+---
+title: "Trabajo final castillo"
+author: "Franco Acevedo"
+date: '2023-12-01'
+output:
+  pdf_document: default
+  html_document: default
+---
+
+# Informe Final: El peso de ser rural y/o de regiones sobre las oportunidades financieras y educacionales
+
+### Abstract
+
+En este estudio se aborda el análisis de la Encuesta de Desarrollo Humano de 2016 en Chile, con un enfoque multinivel para comprender las dinámicas regionales y metropolitanas en diversas dimensiones socioeconómicas. La problemática a trabajar es la disparidad en las oportunidades y recursos entre las regiones y la Región Metropolitana. La pregunta central es revisar cómo las características individuales y el contexto regional influyen en aspectos como la educación, el acceso a servicios y la calidad de vida. El objetivo es examinar patrones regionales y evaluar el impacto de factores individuales y regionales. Los datos, recopilados de 2331 participantes, incluyen variables socioeconómicas y regionales. El resultado principal revela que, a pesar de la significativa variabilidad regional, factores como la educación y el acceso a servicios siguen patrones consistentes. Este enfoque multinivel contribuye a una comprensión más completa de las disparidades y ofrece distintas perspectivas para políticas que aborden de manera efectiva las necesidades regionales en Chile.
+
+### Introducción
+
+En la complejidad de la sociedad chilena, las disparidades socioeconómicas y educativas entre las distintas regiones y la Región Metropolitana surgen como una problemática de alto impacto. Esta brecha en las oportunidades y los recursos ha adquirido resonancia tanto a nivel nacional como internacional, siendo particularmente crítica en un escenario global donde la equidad y la justicia social son valores fundamentales.
+
+En este estudio, abordamos la disparidad en las oportunidades y recursos entre las regiones y la Región Metropolitana en Chile, centrándonos en dimensiones socioeconómicas clave. La investigación utiliza un enfoque multinivel para comprender las dinámicas individuales y regionales que contribuyen a estas disparidades. En este sentido el estudio busca analizar cómo las variables individuales (la clase social y el nivel educativo) se relacionan con las variables contextuales (rural/urbano y región) para comprender la diferencia entre las oportunidades y recursos. La relevancia de explorar ambos niveles de análisis radica en la necesidad de comprender de manera integral cómo las características individuales entrelazan su influencia con factores regionales, moldeando aspectos cruciales como la educación, el acceso a servicios y la calidad de vida.
+
+Desde una perspectiva sociológica, este trabajo busca exponer las dinámicas sociales que configuran las experiencias de las personas en distintas regiones de Chile. La exploración de variables contextuales, como la clasificación urbana o rural y la pertenencia a diferentes regiones, revela la riqueza y complejidad de la realidad social. La relevancia sociológica del análisis se fundamenta en su capacidad para identificar patrones, desafíos y soluciones que aborden las inequidades en el país.
+
+Al explorar estudios previos, se identifican brechas de conocimiento, cimentando así las bases para esta investigación que se erige como un aporte significativo en el contexto chileno. Además, se destaca la relevancia de considerar estas falacias al interpretar resultados, reconociendo la necesidad de evitar generalizaciones simplistas.
+
+Acorde a los datos del Sistema Integrado de Información Territorial (SIIT) de la biblioteca del congreso, recogidos en el censo del año 2017, la población total de la Región Metropolitana es de 7.112.808 habitantes y la población del resto de las regiones sería de 10.461.195 habitantes. Sumado a lo anterior, la población urbana de Chile, es de 15.424.263 habitantes, mientras que la población rural es de 2.149.740 habitantes.
+
+Con el objetivo de contextualizar la problemática, resulta esencial explorar la segregación residencial, un fenómeno social cuyo origen se asocia a la transformación socioeconómica impulsada por el capitalismo industrial. Dicho fenómeno natural o problema estructural, ha sido objeto de análisis desde diversas perspectivas sociológicas. Las teorías funcionalistas-positivistas, según Ruiz-Tagle (2016), han influido en estudios y políticas de integración, destacando la confianza en la proximidad física entre grupos sociales. Además, se exploran conexiones entre la segregación y cambios en modos de producción, comodificación del suelo urbano, diferenciaciones socio-culturales y el impacto del racismo.
+
+Este análisis integral de corrientes sociológicas que explican la segregación residencial sienta bases sólidas para comprender dinámicas regionales y ofrece perspectivas críticas y progresistas. Al incorporar estas dimensiones teóricas, buscamos una comprensión más completa de las disparidades regionales en Chile, contribuyendo a enfoques de políticas más efectivos y equitativos.
+
+Siguiendo las ideas planteadas por Ruiz-Tagle (2016), la aproximación de la Escuela de Chicago, también conocida como la de la ecología humana, se caracteriza por influencias de la división del trabajo de Emile Durkheim y un enfoque empírico-positivista. Esta perspectiva, que abraza un entendimiento darwinista de la competencia y la adaptación, destaca por ser la primera en analizar los problemas urbanos de manera sistemática. La Ecología Humana explora la conexión entre fenómenos sociales y patrones espaciales, utilizando metodologías como el análisis del área social y la estructura de diferenciación funcional.
+
+En el nivel simbiótico, inspirado en biología y ecología, se aborda la ciudad como un ambiente donde grupos compiten y se adaptan, generando complejidad. Se enfoca en la competencia por suelo y sucesión, ilustrado por modelos como el de zonas concéntricas de Burgess.
+
+La Escuela de Chicago desarrolla métodos cuantitativos en este nivel, influyendo en la 'ecología factorial'. La Escuela de Chicago explica la segregación como un "fenómeno natural", parte del crecimiento urbano y cambios locacionales. Se percibe como una etapa normal de transición hacia el equilibrio del orden social. Sin embargo, enfrenta críticas por falacias ecológicas, énfasis positivista y falta de consideración hacia factores de economía política.
+
+Finalmente en el nivel social, se asumen conceptos de Durkheim, considerando que las sociedades modernas se caracterizan por la libertad individual y la diferenciación. La desorganización social se presenta como una consecuencia inevitable de la urbanización. Este nivel se nutre del paradigma de la desorganización social y emplea métodos cualitativos, influyendo en desarrollos teóricos como el interaccionismo simbólico y los estudios de comunidades.
+
+En síntesis, esta introducción ha delineado la problemática, destacado su relevancia y enmarcado el estudio en un contexto sociológico. Integrando antecedentes conceptuales y advertencias sobre falacias, se ha establecido la base para un análisis multinivel que ofrecerá perspectivas esclarecedoras sobre las dinámicas regionales en Chile.
+
+### Objetivos e hipótesis
+
+El foco de este estudio es la hipótesis central, la cual postula una conexión entre las disparidades regionales en Chile y las experiencias individuales, generando patrones distintivos en áreas cruciales como la educación y el acceso a servicios. Se plantea que la Región Metropolitana, como epicentro económico y cultural del país, propicia mayores oportunidades educativas y de desarrollo personal en comparación con otras regiones. Este estudio busca:
+
+1\. Analizar la influencia de variables individuales, como la clase social y el nivel educativo, en las oportunidades y experiencias de las personas.
+
+2\. Evaluar cómo variables contextuales, como la ubicación geográfica (urbana o rural) y la región de residencia, afectan la calidad de vida, el acceso a servicios y las oportunidades educativas.
+
+3\. Contrastar las dinámicas entre la Región Metropolitana y otras regiones para identificar patrones diferenciados.
+
+Diferenciador por niveles
+
+A nivel individual, se postula que variables como la clase social y el nivel educativo incidirán significativamente en el acceso a oportunidades, con posibles variaciones regionales.
+
+A nivel regional, se teoriza que las disparidades en calidad de vida y acceso a servicios serán más notables en regiones distintas a la Metropolitana.
+
+Esta aproximación multinivel busca capturar la complejidad de la realidad chilena, reconociendo que factores individuales y contextuales interactúan de manera única en cada región. La confirmación de estas hipótesis no solo contribuirá al conocimiento sociológico, sino que también proporcionará insumos para políticas públicas más equitativas y contextualmente sensibles en Chile.
+
+### Datos, variables y métodos
+
+Los datos utilizados para este estudio provienen de la Encuesta de Desarrollo Humano 2016 en Chile.
+
+```{r, echo = FALSE}
+dim(EDH)
+```
+
+Al cargar la base de datos se identifican 2437 datos válidos y 347 columnas, es decir, variables.
+
+Luego de escoger cuáles variables y procesarlas, eliminar datos nulos y omirlos, van a ser parte de la base de datos a trabajar. Se identificaron como: J16: ¿De las siguientes alternativas, a qué clase social diría usted que pertenece...?
+
+J4: ¿Cuál es su nivel de estudios alcanzando?
+
+I9: Si usted se planteara realizar un proyecto importante, ¿cuán probable sería para usted...? a) Obtener un crédito de una institución financiera
+
+S1: Región
+
+S2: Zona
+
+A05: sexo
+
+Además se agregó una variable armada sobre si pertenece a la región metropolina o no.
+
+```{r, echo = FALSE}
+EDH_proc_mlm <- EDH %>%
+  mutate(
+    J16_rec = car::recode(J16_T1, "1:2 = 1; 3 = 2; 4:5 = 3; 88:99 = NA"),
+    J4_rec = car::recode(J4, "1:5 = 1; 6:11 = 2; 88:99 = NA"),
+    I9_rec = car::recode(I9_T1, "88:99 = NA"),
+    S01_rec = car::recode(S01, "1:12 = 1; 13 = 2; 14:15 = 1; 88:99 = NA")
+    
+  ) %>%
+  select(
+    clase_social = J16_rec,
+    estudios = J4_rec,
+    credito = I9_rec,
+    region_total = S01,
+    zona = S02,
+    region_metropolitana = S01_rec,
+    sexo = A05
+  )
+```
+
+Entonces queda de esta manera la base de datos con las variables escogidas. A continuación, se presentan estadísticos descriptivos univariados que ofrecen una visión detallada de las características de la muestra:
+
+```{r, echo = FALSE}
+{stargazer(EDH_proc_mlm,title="Estadísticos descriptivos", type = "text")}
+
+```
+
+Se obtienen 2353 datos válidos, con 7 variables.
+
+Estos estadísticos proporcionan una visión detallada de la distribución de cada variable en la muestra. Este análisis descriptivo sienta las bases para la construcción de modelos multinivel que explorarán las complejidades de las interacciones entre estas variables.
+
+### Resultados
+
+En este apartado se van a revisar los modelos y la interpretación de estos
+
+#### Resultados del Modelo Lineal Mixto para la variable estudios las según zona
+
+```{r, echo = FALSE}
+results_0 = lmer(estudios ~ 1 + (1 | zona), data = EDH_proc_mlm)
+summary(results_0)
+
+screenreg(results_0)
+
+reghelper::ICC(results_0)
+```
+
+El coeficiente del intercepto, es estadísticamente significativo. El ICC sugiere que efectivamente hay variabilidad entre las zonas, y alrededor del 9.9% de la variabilidad total se puede atribuir a estas diferencias entre las zonas urbanas y rurales. Estos resultados indican que hay variabilidad significativa entre las zonas en cuanto a la variable estudios.
+
+#### Resultados del Modelo Lineal Mixto para la variable crédito las según zona
+
+```{r, echo = FALSE}
+results_0_credito = lmer(credito ~ 1 + (1 | zona), data = EDH_proc_mlm)
+summary(results_0_credito)
+
+screenreg(results_0_credito)
+
+reghelper::ICC(results_0_credito)
+```
+
+El coeficiente del intercepto, es estadísticamente significativo.El ICC sugiere que, a pesar de que existe una variabilidad entre las zonas, y es aproximadamente el 4.3% de la variabilidad total, no es muy grande, pero esta se puede atribuir a estas diferencias entre las zonas en la variable credito.
+
+#### Resultados del Modelo Lineal Mixto en las Regiones
+
+```{r, echo = FALSE}
+results_0_estudio_regiones = lmer(estudios ~ 1 + (1 | region_total), data = EDH_proc_mlm)
+summary(results_0_estudio_regiones)
+
+screenreg(results_0_estudio_regiones)
+
+reghelper::ICC(results_0_estudio_regiones)
+```
+
+Este modelo sugiere que hay variabilidad significativa entre las regiones en términos de nivel de estudios. El ICC de alrededor del 1.4% indica que una pequeña pero existente proporción de la variabilidad total se explica por las diferencias entre las regiones. Esto respalda la idea de que las regiones tienen un impacto en el nivel de estudios, y este modelo cuantifica esa variabilidad a nivel regional.. Sin embargo, el ICC relativamente bajo indica que la mayor parte de la variabilidad aún se encuentra a nivel individual dentro de las regiones.
+
+#### Resultados del Modelo Lineal Mixto para Estudios en las Zonas
+
+```{r, echo = FALSE}
+results_1_zona = lmer(estudios ~ 1 + clase_social + sexo  + (1 | zona), data = EDH_proc_mlm)
+screenreg(results_1_zona, naive=TRUE)
+
+reghelper::ICC(results_1_zona)
+```
+
+El intercepto, es estadísticamente significativo. La clase social tiene un impacto positivo significativo en el nivel de estudios (p \< 0.001), indicando que, en promedio, a mayor clase social, mayor nivel de estudios. El modelo sugiere que la clase social y el sexo tienen asociaciones significativas con el nivel de estudios a nivel individual. La variabilidad entre las zonas también es significativa, lo que respalda la idea de que las zonas contribuyen a las diferencias en el nivel de estudios. El ICC del 6.9% indica que la variabilidad total se debe a las diferencias entre las zonas. Estos resultados sugieren que hay variabilidad significativa en el nivel de estudios entre las zonas y que la clase social es un predictor significativo de este nivel, mientras que el sexo no es un factor que afecte demasiado atingente.
+
+#### Resultados del Modelo Lineal Mixto para Estudios en las Regiones
+
+```{r, echo = FALSE}
+results_1_regiones = lmer(estudios ~ 1 + clase_social + sexo + (1 | region_total), data = EDH_proc_mlm)
+screenreg(results_1_regiones, naive=TRUE)
+
+reghelper::ICC(results_1_regiones)
+```
+
+El intercepto,es estadisticamente significativo. La clase social tiene un impacto positivo significativo en el nivel de estudios (p \< 0.001), lo mismo que antes,ya que señala que en promedio, a mayor clase social, mayor nivel de estudios. Al igual que antes, el sexo no tiene un impacto significativo en el nivel de estudios, ya que su p-valor es mayor a 0.05 (p \> 0.05). El modelo sugiere que la clase social y el sexo tienen asociaciones significativas con el nivel de estudios a nivel individual, y hay una variabilidad significativa entre las regiones. El ICC del 1.4% indica que una pequeña, pero que efectivamente existe, proporción de la variabilidad total se explica por las diferencias entre las regiones.
+
+#### Resultados del Modelo Lineal Mixto para Estudios con Interacciones en las Zonas
+
+```{r, echo = FALSE}
+results_5 = lmer(estudios ~ 1 + sexo + clase_social*credito + region_metropolitana + (1 + credito | zona), data = EDH_proc_mlm)
+screenreg(results_5)
+reghelper::ICC(results_5)
+```
+
+Este modelo sugiere que, después de controlar por otras variables, como el sexo, la clase social y el crédito, estos están asociados significativamente con el nivel de estudios a nivel individual. La región_metropolitana, es decir que pertenezca o no a la región metropolitana, y la interacción clase_social:credito no contribuyen significativamente a explicar la variabilidad en el nivel de estudios.
+
+La variabilidad entre las zonas sigue siendo significativa, indicando que hay diferencias sistemáticas en el nivel de estudios entre las zonas. El ICC del 5.1% indica que una pequeña pero existente proporción de la variabilidad total se explica por las diferencias entre las zonas.
+
+#### Resultados del Modelo Lineal Mixto para Estudios con Interacciones en las Regiones
+
+```{r, echo = FALSE}
+results_5_region= lmer(estudios ~ 1 + sexo + clase_social*credito + region_metropolitana + (1 + credito | region_total), data = EDH_proc_mlm)
+screenreg(results_5_region)
+reghelper::ICC(results_5_region)
+```
+
+Este modelo sugiere que, después de controlar por otras variables, como el sexo, la clase social y el crédito, estos están asociados significativamente con el nivel de estudios a nivel individual. La región_metropolitana, es decir que pertenezca o no a la región metropolitana, y la interacción clase_social:credito no contribuyen significativamente a explicar la variabilidad en el nivel de estudios. Con un ICC de 0.0149960, se puede señalar que este valor indica la proporción de la varianza total en el nivel de estudios que se debe a las diferencias entre las regiones. Para este caso, aproximadamente el 1.5% de la variabilidad total en el nivel de estudios se atribuye a las diferencias entre las regiones.
+
+#### Resultados de Modelos Multinivel
+
+```{r, echo = FALSE}
+screenreg(models)
+```
+
+Inicialmente, todos los modelos tienen un intercepto, esto significa qué nivel, qué valor se espera de la variable nivel de estudios cuando todas las demás variables son nulas. Además, este valor varía entre modelos, lo que indica que existen diferencias en el nivel de estudios según las variables predictoras. Con respecto a las clases sociales, los coeficientes positivos indican que al mantener las variables predictoras constantes, se puede asumir que a mayor clase social, mayor nivel de estudio. Además, en todos los modelos que aparece(3, 4, 6 y 8), es estadísticamente significativa. Con respecto al sexo, aparece en los mismos modelos, y parece indicar que las mujeres tiendes a tener un nivel de estudios más bajo. Con valores también estadísticamente significativos. Con respecto a si pertenece o no a la región metropolitana, se puede ver que no es estadísticamente significativo en ningún caso, por lo que se puede asumir que no es un factor relevante a la hora de revisar el nivel de estudios. Lo mismo sucede con la clase social y la posibilidad de un crédito. En resumen, las variables elegidas y los efectos aleatorios, efectivamente afectan a los parámentros. Las variables que tienen impactos más significativos de la variable estudios es la de clase social, y luego el sexo, mientras que si pertenece o no a la región metropolitana, a pesar de que sí influye, no es tan relevante.
+
+Se puede ver cómo realmente los resultados de este análisis demuestran que este estudio está justificado, ya que se da cuenta de que la hipótesis y objetivos planteados efectivamente sí tienen una incidencia importante a la hora de evaluar el nivel de estudios, así como los diferenciadores geográficos.
+
+### Conclusiones
+
+En este análisis multinivel, se exploró la relación entre el nivel de estudios y diversas variables predictoras, mientras se consideraba la estructura jerárquica de los datos. A través de ocho modelos multinivel, se obtuvieron resultados que ofrecen perspectivas significativas y proporcionan respuestas a preguntas clave, que podrían llegar a afectar a las decisiones en políticas públicas o dónde deberían invertir las municipalidades u otras instituciones gubernamentales.
+
+Con respecto a los hallazgos, los resultados revelan que las variables "clase_social", "sexo" y "credito" son significativas en la determinación del nivel de estudios. La interacción "clase_social:credito" también mostró relevancia en algunos modelos.
+
+Más importante aún es que se identificó una variabilidad significativa entre las "zonas" y "regiones totales", indicando que factores no observados a nivel de zona y región tienen un impacto en el nivel de estudios. En esta misma línea, se da otro argumento más a la importancia del contexto metropolitano, ya que la variable "region_metropolitana" demostró ser significativa para en algunos modelos, subrayando la importancia del contexto metropolitano en la determinación del nivel de estudios. Este razonamiento y forma de explorar las sitauciones, es el por qué la estimación multinivel es tan relevante y efectiva. Esta misma permitió modelar la variabilidad a diferentes niveles jerárquicos, logrando entender la complejidad inherente en datos estructurados. Además, abordó la correlación residual dentro de los grupos, mejorando la precisión de las estimaciones y capturando la variabilidad espacial. A pesar de esto, se encontraron limitaciones, como la simplicidad del modelo y la naturaleza transversal de los datos, estos mismos limitan las inferencias causales. Considerar otras variables y realizar investigaciones longitudinales podría mejorar la capacidad predictiva y la comprensión de las relaciones causales. Sería en extremo provechoso el lograr cruzar estos datos con una variable de nivel educacional segregada por región, por ejemplo, o saber exactamente en qué tipo de colegio están las personas por zona urbana o rural, pensando en liceos técnicos o agricolas. En esta misma línea la aproximación de la Escuela de Chicago, la de la ecología humana, que se caracteriza por influencias de la división del trabajo de Emile Durkheim y un enfoque empírico-positivista, puede ser clave para interpretar este tipo de situaciones. En conclusión, análisis multinivel proporciona información valiosa sobre los determinantes del nivel de estudios, destacando la importancia de factores individuales y contextuales. La estimación multinivel se revela como una herramienta valiosa para abordar la complejidad de datos jerárquicos, con resultados robustos y contextualmente relevantes. Aunque se identificaron patrones significativos, se reconoce la necesidad de investigaciones adicionales para profundizar en la comprensión de los procesos educativos y sus variaciones. Este estudio sienta las bases para futuras investigaciones que podrían mejorar la efectividad de intervenciones educativas y políticas.
+
+### Referencias:
+
+Buscador Estadístico - SIIT. (s. f.). Población por zona Urbana-Rural, Censos 1992, 2002 y 2017. <https://www.bcn.cl/siit/estadisticasterritoriales//resultados-consulta?id=286762>
+
+Ruiz‐Tagle, J. (2016). La segregación y la integración en la sociología urbana: revisión de enfoques y aproximaciones críticas para las políticas públicas. Revista Invi, 31(87), 9-57. <https://doi.org/10.4067/s0718-83582016000200001>
+
+### Código completo
+
+```{r, echo = FALSE}
+#Codigo completo
+# 1. Cargar librerías
+install.packages("pacman")
+pacman::p_load(lme4,
+               reghelper,
+               haven,
+               stargazer,
+               ggplot2, # gráficos
+               texreg, # tablas de regresion (screenreg)
+               dplyr,# manipulacion de datos
+               rmarkdown,
+               knitr)
+# paquetes a carga
+
+
+# 2. Cargar datos
+## Ajustar espacio de trabajo
+rm(list=ls())       # borrar todos los objetos en el espacio de trabajo
+options(scipen=999) # valores sin notación cientifica
+
+
+# Read the CSV file
+EDH <- read.csv("EDH_2016_csv.csv")
+#Link de los datos: https://www.estudiospnud.cl/bases-de-datos/encuestas-de-desarrollo-humano-2016/
+# View the data
+View(EDH)
+
+# Variables
+
+# Note: I'm assuming you want to mutate the EDH_proc dataframe, so I'm using EDH_proc instead of EDH in mutate functions.
+
+
+
+EDH_proc_mlm <- EDH %>%
+  mutate(
+    J16_rec = car::recode(J16_T1, "1:2 = 1; 3 = 2; 4:5 = 3; 88:99 = NA"),
+    J4_rec = car::recode(J4, "1:5 = 1; 6:11 = 2; 88:99 = NA"),
+    I9_rec = car::recode(I9_T1, "88:99 = NA"),
+    S01_rec = car::recode(S01, "1:12 = 1; 13 = 2; 14:15 = 1; 88:99 = NA")
+    
+  ) %>%
+  select(
+    clase_social = J16_rec,
+    estudios = J4_rec,
+    credito = I9_rec,
+    region_total = S01,
+    zona = S02,
+    region_metropolitana = S01_rec,
+    sexo = A05
+  )
+
+
+
+EDH_proc_mlm <- na.omit(EDH_proc_mlm)
+
+
+
+
+stargazer(EDH_proc_mlm,title="Estadísticos descriptivos", type = "text")
+
+
+#---- regresionessss
+
+results_0_estudio = lmer(estudios ~ 1 + (1 | zona), data = EDH_proc_mlm)
+summary(results_0_estudio)
+
+screenreg(results_0_estudio)
+
+reghelper::ICC(results_0_estudio)
+
+
+
+results_0_credito = lmer(credito ~ 1 + (1 | zona), data = EDH_proc_mlm)
+summary(results_0_credito)
+
+screenreg(results_0_credito)
+
+reghelper::ICC(results_0_credito)
+
+#-----------------------------------
+
+results_0_estudio_regiones = lmer(estudios ~ 1 + (1 | region_total), data = EDH_proc_mlm)
+summary(results_0_estudio_regiones)
+
+screenreg(results_0_estudio_regiones)
+
+reghelper::ICC(results_0_estudio_regiones)
+
+
+
+results_0_credito_regiones = lmer(credito ~ 1 + (1 | region_total), data = EDH_proc_mlm)
+summary(results_0_credito_regiones)
+
+screenreg(results_0_credito_regiones)
+
+reghelper::ICC(results_0_credito_regiones)
+
+#-----------------------
+
+
+results_1_zona <- lmer(estudios ~ 1 + clase_social + sexo + (1 | zona), data = EDH_proc_mlm)
+screenreg(results_1_zona, naive=TRUE)
+reghelper::ICC(results_1_zona)
+
+
+results_1_regiones <- lmer(estudios ~ 1 + clase_social + sexo + (1 | region_total), data = EDH_proc_mlm)
+screenreg(results_1_regiones, naive=TRUE)
+
+
+
+
+reghelper::ICC(results_1_regiones)
+
+#-----------------------
+
+results_5 = lmer(estudios ~ 1 + sexo + clase_social*credito + region_metropolitana + (1 + credito | zona), data = EDH_proc_mlm)
+screenreg(results_5)
+reghelper::ICC(results_5)
+
+
+
+results_5_region= lmer(estudios ~ 1 + sexo + clase_social*credito + region_metropolitana + (1 + credito | region_total), data = EDH_proc_mlm)
+screenreg(results_5_region)
+reghelper::ICC(results_5_region)
+
+
+
+
+
+#reg_ind=lm(estudios ~ clase_social + sexo + region_metropolitana + region_total, data=EDH_proc_mlm)
+#agg_mlm=EDH_proc_mlm %>% group_by(zona) %>% summarise_all(funs(mean))
+
+
+#reg_agg <- lm(estudios ~ clase_social + sexo + region_metropolitana , data=agg_mlm)
+
+
+#screenreg(list(reg_ind, reg_agg, results_5_region))
+#screenreg(list(reg_ind, reg_agg, results_5))
+
+
+
+
+
+library(car)
+vif(results_5)
+
+
+
+
+modelos <- list(results_0_estudio, results_0_credito, results_0_estudio_regiones, results_0_credito_regiones, results_1_zona, results_1_regiones, results_5, results_5_region)
+
+stargazer(
+  modelos,
+  title = "Resultados de Modelos Multinivel",
+  align = TRUE,
+  dep.var.labels.include = FALSE,
+  type = "html",
+  out = "resultados_multinivel.html",
+  covariate.labels = c("Intercepto", "Sexo", "Clase Social", "Crédito", "Región Metropolitana", "Interacción: Clase Social * Crédito"),
+  omit = "region_total",  # Excluir varianza a nivel total en modelos multinivel
+  star.cutoffs = c(0.05, 0.01, 0.001),  # Niveles de significancia
+  add.lines = list(c("ICC", "", "", "", "", "", "", reghelper::ICC(results_5), reghelper::ICC(results_5_region)))
+)
+
+screenreg(modelos)
+reghelper::ICC(modelos)
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
